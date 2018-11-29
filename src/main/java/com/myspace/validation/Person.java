@@ -12,7 +12,7 @@ public class Person implements java.io.Serializable {
 	private java.lang.String name;
 	@javax.validation.constraints.Min(18L)
 	private java.lang.Integer age;
-	@javax.validation.constraints.Pattern(regexp = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$")
+	@javax.validation.constraints.Pattern(flags = {}, regexp = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$")
 	private java.lang.String email;
 
 	public Person() {
