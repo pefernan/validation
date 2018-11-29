@@ -6,12 +6,44 @@ package com.myspace.validation;
 
 public class Person implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Person() {
-    }
+	private java.lang.String name;
+	private java.lang.Integer age;
+	private java.lang.String email;
 
+	public Person() {
+	}
 
+	public java.lang.String getName() {
+		return this.name;
+	}
 
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public java.lang.Integer getAge() {
+		return this.age;
+	}
+
+	public void setAge(java.lang.Integer age) {
+		this.age = age;
+	}
+
+	public java.lang.String getEmail() {
+		return this.email;
+	}
+
+	public void setEmail(java.lang.String email) {
+		this.email = email;
+	}
+
+	public Person(java.lang.String name, java.lang.Integer age,
+			java.lang.String email) {
+		this.name = name;
+		this.age = age;
+		this.email = email;
+	}
 
 }
