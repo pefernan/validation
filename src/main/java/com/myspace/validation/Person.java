@@ -8,8 +8,11 @@ public class Person implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
+	@javax.validation.constraints.NotNull
 	private java.lang.String name;
+	@javax.validation.constraints.Min(18L)
 	private java.lang.Integer age;
+	@javax.validation.constraints.Pattern(regexp = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$")
 	private java.lang.String email;
 
 	public Person() {
